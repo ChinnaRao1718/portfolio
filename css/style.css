@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #1abc9c;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?tech') no-repeat center center/cover;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.home-content h2 span {
+    color: #1abc9c;
+}
+
+.home-content p {
+    font-size: 20px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1abc9c;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #16a085;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #1abc9c;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-container, .projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill, .project {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+    flex-basis: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
